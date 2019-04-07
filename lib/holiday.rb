@@ -64,7 +64,7 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   holiday_hash.each do |seasons, holidays|
     temp_word = seasons.dup
-    binding.pry
+
 
   end
 end
