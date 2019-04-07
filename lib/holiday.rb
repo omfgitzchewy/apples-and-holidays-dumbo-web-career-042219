@@ -62,8 +62,8 @@ def all_supplies_in_holidays(holiday_hash)
   # Summer:
   #   Fourth Of July: Fireworks, BBQ
   # etc.
-  holiday_hash.each do |seasons, holidays|
-    temp_word = seasons.dup
+  holiday_hash.each do |seasons|
+    seasons.capitalize!
 
 
   end
