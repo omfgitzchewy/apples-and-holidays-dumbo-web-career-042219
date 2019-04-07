@@ -62,7 +62,11 @@ def all_supplies_in_holidays(holiday_hash)
   # Summer:
   #   Fourth Of July: Fireworks, BBQ
   # etc.
-  holiday_hash.each {|seasons| seasons.to_s.capitalize!}
+  holiday_hash.each do |seasons, holidays|
+    temp_word = seasons.dup
+    seasons.clear
+    seasons << temp_word.split("_").map(&:capitalize!).join(" ")
+  end
 end
 
 def all_holidays_with_bbq(holiday_hash)
