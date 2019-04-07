@@ -64,7 +64,7 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   holiday_hash.each do |seasons, holidays|
     temp_word = seasons.dup
-    seasons.clear
+  
     seasons << temp_word.split("_").map(&:capitalize!).join(" ")
   end
 end
